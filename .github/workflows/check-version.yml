@@ -1,4 +1,4 @@
-name: 'Lint PR Title'
+name: 'Check Version Bump'
 
 on:
   pull_request:
@@ -8,14 +8,12 @@ on:
       - edited
       - synchronize
     branches:
-      - main
-      - dev
       - master
-
 jobs:
-  lint-title:
+  check-version-bump:
     runs-on: ubuntu-latest
     steps:
-      - uses: ArcBlock/action-lint-pull-request-title@master
+      - name: action-version-check
+        uses: arcblock/action-version-check@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
