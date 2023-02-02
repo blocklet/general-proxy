@@ -1,6 +1,9 @@
 const env = require('@blocklet/sdk/lib/env');
+const { name, version } = require('../../package.json');
 
 module.exports = {
   ...env,
-  chainHost: process.env.CHAIN_HOST || '',
+  name,
+  version,
+  upstreamUrl: process.env.UPSTREAM_URL,
 };

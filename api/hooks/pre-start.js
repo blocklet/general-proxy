@@ -1,33 +1,14 @@
 require('@blocklet/sdk/lib/error-handler');
 require('dotenv-flow').config();
 
-const Client = require('@ocap/client');
+const isUrl = require('is-absolute-url');
 
-const env = require('../libs/env');
-const logger = require('../libs/logger');
-const { wallet } = require('../libs/auth');
-const { name } = require('../../package.json');
-
-const ensureAccountDeclared = async () => {
-  if (env.isComponent) return;
-  if (!env.chainHost) return;
-
-  const client = new Client(env.chainHost);
-  const { state } = await client.getAccountState({ address: wallet.toAddress() }, { ignoreFields: ['context'] });
-  if (!state) {
-    const hash = await client.declare({ moniker: name, wallet });
-    logger.log(`app account declared on chain ${env.chainHost}`, hash);
-  } else {
-    logger.log(`app account already declared on chain ${env.chainHost}`);
-  }
-};
-
-(async () => {
-  try {
-    await ensureAccountDeclared();
+(() => {
+  if (isUrl(process.env.UPSTREAM_URL)) {
+    console.info(`Proxy to upstream: ${process.env.UPSTREAM_URL}`);
     process.exit(0);
-  } catch (err) {
-    logger.error(`${name} pre-start error`, err.message);
+  } else {
+    console.error('UPSTREAM_URL must be an absolute URL');
     process.exit(1);
   }
 })();
