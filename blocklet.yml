@@ -13,7 +13,7 @@ repository:
   type: git
   url: git+https://github.com/blocklet/general-proxy.git
 specVersion: 1.2.8
-version: 0.1.3
+version: 0.1.4
 logo: logo.png
 files:
   - logo.png
@@ -25,6 +25,7 @@ interfaces:
     prefix: '*'
     port: BLOCKLET_PORT
     protocol: http
+    proxyBehavior: service
 community: ''
 documentation: ''
 homepage: ''
@@ -54,3 +55,4 @@ capabilities:
   navigation: true
 screenshots: []
 components: []
+egress: true

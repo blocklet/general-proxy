@@ -1,3 +1,7 @@
+## 0.1.4 (2025-4-19)
+
+- feat: add access log for proxy
+
 ## 0.1.3 (2023-4-10)
 
 - chore: publish to dev store
