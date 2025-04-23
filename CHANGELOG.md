@@ -1,3 +1,7 @@
+## 0.1.5 (2025-4-23)
+
+- chore: update readme
+
 ## 0.1.4 (2025-4-19)
 
 - feat: add access log for proxy
