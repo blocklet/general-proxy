@@ -12,7 +12,7 @@ A simple blocklet that helps:
 ## Usage
 
 1. Launch this blocklet in your blocklet server
-2. Config `UPSTREAM_URL` for the blocklet, each change may require a restart
+2. Config `UPSTREAM_URL` for the blocklet, must be a valid URL, eg: `http://127.0.0.1:9090`, each change may require a restart
 
 ## Protect your service
 
