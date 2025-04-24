@@ -1,0 +1,122 @@
+{
+  "form": {
+    "labelCol": 6,
+    "wrapperCol": 12
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "mappings": {
+        "type": "array",
+        "x-decorator": "FormItem",
+        "x-component": "ArrayCards",
+        "x-component-props": {
+          "title": "Mapping"
+        },
+        "x-validator": [],
+        "x-decorator-props": {},
+        "name": "mappings",
+        "default": "[]",
+        "x-designable-id": "2dgz1hi0vnf",
+        "x-index": 0,
+        "required": false,
+        "items": {
+          "type": "object",
+          "required": true,
+          "x-designable-id": "25yx3oraexj",
+          "x-validator": [],
+          "properties": {
+            "mountPoint": {
+              "type": "string",
+              "title": "Mount point",
+              "x-decorator": "FormItem",
+              "x-component": "Input",
+              "x-validator": [],
+              "x-component-props": {
+                "placeholder": "Please input mount point, example: /abc"
+              },
+              "x-decorator-props": {
+                "colon": false
+              },
+              "name": "mountPoint",
+              "description": "",
+              "default": "/",
+              "required": true,
+              "x-designable-id": "vgizlbk908b",
+              "x-index": 0
+            },
+            "url": {
+              "type": "string",
+              "title": "Url   ",
+              "x-decorator": "FormItem",
+              "x-component": "Input",
+              "x-validator": [],
+              "x-component-props": {
+                "placeholder": "Please input mount point, example: /abc",
+                "style": {
+                  "margin": "0px 0px 0px 56px",
+                  "padding": "0px 0px 0px 0px"
+                }
+              },
+              "x-decorator-props": {
+                "colon": false
+              },
+              "name": "url",
+              "description": "",
+              "default": "/",
+              "required": true,
+              "x-designable-id": "wowqneg4sfa",
+              "x-index": 1
+            },
+            "q4b4szpt0jm": {
+              "type": "void",
+              "x-component": "ArrayCards.Remove",
+              "x-designable-id": "q4b4szpt0jm",
+              "x-index": 2
+            },
+            "10ydkmv5l87": {
+              "type": "void",
+              "x-component": "ArrayCards.MoveDown",
+              "x-designable-id": "10ydkmv5l87",
+              "x-index": 3
+            },
+            "x2jjnlipu1i": {
+              "type": "void",
+              "x-component": "ArrayCards.MoveUp",
+              "x-designable-id": "x2jjnlipu1i",
+              "x-index": 4
+            }
+          }
+        },
+        "properties": {
+          "h2c23502iwl": {
+            "type": "void",
+            "title": "Addition",
+            "x-component": "ArrayCards.Addition",
+            "x-component-props": {},
+            "x-designable-id": "h2c23502iwl",
+            "x-index": 0
+          },
+          "mountPoint": {
+            "type": "string",
+            "title": "Mount point",
+            "x-decorator": "FormItem",
+            "x-component": "Input",
+            "x-validator": [],
+            "x-component-props": {
+              "placeholder": "Please input mount point, example: /abc"
+            },
+            "x-decorator-props": {},
+            "name": "mountPoint",
+            "description": "",
+            "default": "/",
+            "required": false,
+            "x-designable-id": "js2t4onseqx",
+            "x-index": 1
+          }
+        }
+      }
+    },
+    "x-designable-id": "yrr9cqfq3hx"
+  }
+}
