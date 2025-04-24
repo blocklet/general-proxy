@@ -1,3 +1,7 @@
+## 0.1.6 (2025-4-24)
+
+- feat: support configuration of multiple URL mappings
+
 ## 0.1.5 (2025-4-23)
 
 - chore: update readme
