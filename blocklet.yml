@@ -45,7 +45,7 @@ scripts:
 environments:
   - name: UPSTREAM_URL
     description: What'url endpoint of the upstream?
-    required: true
+    required: false
     default: ''
     secure: false
     shared: false
