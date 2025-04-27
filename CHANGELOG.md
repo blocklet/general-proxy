@@ -1,3 +1,7 @@
+## 0.1.7 (2025-4-27)
+
+- fix: configuration failure after installation
+
 ## 0.1.6 (2025-4-24)
 
 - feat: support configuration of multiple URL mappings

@@ -18,6 +18,8 @@ for (const mapping of mappings) {
     changeOrigin: false, 
     followRedirects: false,
     ws: true,
+    ignorePath: false,
+    ...mapping,
   }));
 }
 
