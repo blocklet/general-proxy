@@ -11,7 +11,7 @@
         "x-decorator": "FormItem",
         "x-component": "ArrayCards",
         "x-component-props": {
-          "title": "Title"
+          "title": "Mapping"
         },
         "x-validator": [],
         "x-decorator-props": {},
@@ -104,6 +104,6 @@
         }
       }
     },
-    "x-designable-id": "i0ifn3uwgex"
+    "x-designable-id": "v9ddm772s9e"
   }
 }
